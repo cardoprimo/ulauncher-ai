@@ -44,7 +44,7 @@ class KeywordQueryEventListener(EventListener):
     """
 
     def on_event(self, event, extension):
-        endpoint = "https://api.openai.com/v1/chat/completions"
+        endpoint = extension.preferences['api_endpoint']
 
         logger.info('Processing user preferences')
         # Get user preferences

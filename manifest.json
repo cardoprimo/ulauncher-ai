@@ -1,6 +1,6 @@
 {
     "required_api_version": "^2.0.0",
-    "name": "ChatGPT",
+    "name": "ChatGPT (LOCAL)",
     "description": "Create a domain specific assistant using GPT-3.5",
     "developer_name": "SeoFernando",
     "icon": "images/icon.png",
@@ -17,8 +17,15 @@
         {
             "id": "api_key",
             "type": "input",
-            "name": "OpenAI API Key",
+            "name": "OpenAI compatible API Key",
             "description": "You can get one at https://platform.openai.com/account/api-keys",
+            "default_value": ""
+        },
+        {
+            "id": "api_endpoint",
+            "type": "input",
+            "name": "API Endpoint",
+            "description": "Completions endpoint API url",
             "default_value": ""
         },
         {
