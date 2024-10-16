@@ -23,12 +23,8 @@ def wrap_text(text, max_w):
         else:
             lines.append(current_line.strip())
             current_line = word
-        if word.endswith('.'):
-            # If the word ends with a period, create a new line
-            lines.append(current_line.strip())
-            current_line = ''
-    if len(current_line) > 0:
-        lines.append(current_line.strip())
+
+    lines.append(current_line.strip())
     return '\n'.join(lines)
 
 
